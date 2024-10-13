@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="" class="w3-bar-item w3-button w3-theme-l1"><i class="fa-solid fa-computer"></i></a>
+    <a href="/ora_project/infrocourse/info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+    <a href="/ora_project/webtech/web.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ web</a>
+    <a href="/ora_project/infostudent/infosv.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#khaigiang">Thông tin khai giảng</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#semina">Thông tin semina</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#congty">Công ty quan tâm</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:230px; margin-top: 30px;">
+  <div class="w3-row w3-padding-70" id="khaigiang">
+    <div class="w3-twothird w3-container" >
+      <h1 class="w3-text-teal">THÔNG TIN KHAI GIẢNG</h1>
+      <p>Công nghệ web và dịch vụ trực tuyến</p>
+      <p>Mã học phần: IT4409</p>
+      <p>Thời gian khóa học:</p>
+      <ul>
+        <li style="display: flex; align-items: center;">
+          <i class="fa-regular fa-calendar"></i>
+          <p style="margin: 0; padding-left: 3px;">Bắt đầu: 01/09/2024</p>
+        </li>
+        <li style="display: flex; align-items: center;">
+          <i class="fa-regular fa-calendar"></i>
+          <p style="margin: 0; padding-left: 3px;">Kết thúc: 31/01/2025</p></li>
+      </ul>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="ad-text">Quảng cáo</p>
+      <a href="https://www.w3schools.com/html/" target="_blank">
+        <img src="img/maxresdefault.jpg" alt="AD" class="w3-border" style="width: 100%; height: auto; margin-bottom: 5px;">
+      </a>
+      <a href="https://www.w3schools.com/css/" target="_blank">
+        <img src="img/hq720.jpg" alt="AD" class="w3-border" style="width: 100%; height: auto;">
+      </a>
+    </div>
+  </div>
+  <div class="w3-row" id="semina">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">THÔNG TIN SEMINA</h1>
+      <p>
+        Các buổi seminar trong môn học này được tổ chức nhằm giúp sinh viên nâng cao kiến thức về công nghệ web, tiếp cận các xu hướng mới nhất và trao đổi học hỏi với các chuyên gia. Dưới đây là một số thông tin chi tiết về các buổi seminar:
+      </p>
+      <ul>
+        <li>
+          <strong>Seminar 1: Giới thiệu về React và Next.js</strong><br>
+          Thời gian: 10/10/2024 - 14:00<br>
+          Địa điểm: Phòng 301, tòa nhà B1, HUST<br>
+          Giảng viên: TS. Nguyễn Văn A
+        </li>
+        <li>
+          <strong>Seminar 2: Phát triển ứng dụng web với Tailwind CSS</strong><br>
+          Thời gian: 17/10/2024 - 14:00<br>
+          Địa điểm: Phòng 305, tòa nhà B1, HUST<br>
+          Giảng viên: ThS. Trần Thị B
+        </li>
+        <li>
+          <strong>Seminar 3: API và quản lý dữ liệu trong Node.js</strong><br>
+          Thời gian: 24/10/2024 - 14:00<br>
+          Địa điểm: Phòng 302, tòa nhà B1, HUST<br>
+          Giảng viên: TS. Phạm Văn C
+        </li>
+      </ul>
+      <p>
+        Sinh viên cần chuẩn bị trước các kiến thức cơ bản về JavaScript và HTML/CSS để tham gia hiệu quả vào các buổi seminar này.
+      </p>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="https://www.gal-digital.de/en/digitalization-blog/online-seminar" target="_blank">
+        <img src="img/web-seminar.webp" alt="AD" class="w3-border" style="width: 100%; height: auto; margin-bottom: 5px;">
+      </a>
+      <a href="https://thietbihop.com/web-seminar-la-gi-nhung-tinh-nang-co-ban-cua-webinar/" target="_blank">
+        <img src="img/webinar-003.jpg" alt="AD" class="w3-border" style="width: 100%; height: auto;">
+      </a>
+    </div>
+  </div>
+  <div class="w3-row w3-padding-64" id="congty">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">CÁC CÔNG TY QUAN TÂM</h1>
+      <p>
+        Dưới đây là một số công ty công nghệ lớn tại Việt Nam có mối quan tâm đến các giải pháp và nhân lực trong lĩnh vực phát triển web:
+      </p>
+      <ul>
+        <li>
+          <strong><a href="https://viettel.com.vn/vi/" target="_blank" class="custom-link">Viettel</a></strong><br>
+          Viettel là tập đoàn viễn thông và công nghệ hàng đầu tại Việt Nam. Công ty có nhu cầu cao về nhân lực trong các lĩnh vực như phát triển ứng dụng web, trí tuệ nhân tạo và an ninh mạng.
+        </li>
+        <li>
+          <strong><a href="https://www.vng.com.vn/" target="_blank" class="custom-link">VNG</a></strong><br>
+          VNG là công ty công nghệ với các sản phẩm nổi bật như Zalo, Zing MP3, và Zing News. VNG luôn tìm kiếm các kỹ sư phần mềm có khả năng làm việc với các nền tảng web và các công nghệ mới như React và Node.js.
+        </li>
+        <li>
+          <strong><a href="https://fpt.com/vi" target="_blank" class="custom-link">FPT Software</a></strong><br>
+          FPT Software là công ty công nghệ lớn tại Việt Nam, chuyên cung cấp các dịch vụ phát triển phần mềm và giải pháp công nghệ cho khách hàng trong và ngoài nước. Công ty thường xuyên tuyển dụng các kỹ sư có kinh nghiệm trong phát triển web.
+        </li>
+        <li>
+          <strong><a href="https://www.vietcombank.com.vn/" target="_blank" class="custom-link">Vietcombank</a></strong><br>
+          Vietcombank không chỉ là ngân hàng hàng đầu mà còn đẩy mạnh các dịch vụ tài chính số. Họ rất quan tâm đến các chuyên gia phát triển web để xây dựng các hệ thống thanh toán trực tuyến và ứng dụng di động.
+        </li>
+      </ul>
+      <p>
+        Các công ty này luôn có nhu cầu tuyển dụng nhân lực có kỹ năng về công nghệ web và sẵn sàng tham gia vào các dự án ứng dụng thực tế.
+      </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="ad-text">Thông tin tuyển dụng VNG</p>
+      <a href="https://career.vng.com.vn/vi/tim-kiem-viec-lam" target="_blank">
+        <img src="img/62f23a2fc850d202620596.jpg" alt="AD" class="w3-border" style="width: 100%; height: auto; margin-bottom: 5px;">
+      </a>
+    </div>
+  </div>  
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>About Us</h4>
+      <p>We are dedicated to providing top-notch educational content and web development resources. Our goal is to help students and professionals excel in the field of web technologies.</p>
+    </div>
+  
+    <div class="w3-container w3-theme-l1 w3-padding-16">
+      <div class="w3-row-padding">
+        <!-- Contact Information -->
+        <div class="w3-third">
+          <h5>Contact Us</h5>
+          <p><i class="fa fa-map-marker"></i> Address: 123 Main St, Hanoi, Vietnam</p>
+          <p><i class="fa fa-phone"></i> Phone: +84 123 456 789</p>
+          <p><i class="fa fa-envelope"></i> Email: contact@example.com</p>
+        </div>
+  
+        <!-- Useful Links -->
+        <div class="w3-third">
+          <h5>Useful Links</h5>
+          <ul class="w3-ul">
+            <li><a href=" " class="w3-hover-opacity">Home</a></li>
+            <li><a href="/ora_project/infrocourse/info.html" class="w3-hover-opacity">Thông tin môn học</a></li>
+            <li><a href="/ora_project/webtech/web.html" class="w3-hover-opacity">Các công nghệ web</a></li>
+            <li><a href="/ora_project/infostudent/infosv.html" class="w3-hover-opacity">Thông tin sinh viên</a></li>
+            
+          </ul>
+        </div>
+  
+        <!-- Social Media -->
+        <div class="w3-third">
+          <h5>Follow Us</h5>
+          <a href="#" class="w3-button w3-large w3-theme-d1 w3-hover-opacity"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="w3-button w3-large w3-theme-d1 w3-hover-opacity"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="w3-button w3-large w3-theme-d1 w3-hover-opacity"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="w3-button w3-large w3-theme-d1 w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="w3-container w3-theme-l1 w3-center w3-padding-16">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+  </div>
+
+
+<!-- END MAIN -->
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+<script src="https://kit.fontawesome.com/b251fda1bb.js" crossorigin="anonymous"></script>
+</body>
+</html>

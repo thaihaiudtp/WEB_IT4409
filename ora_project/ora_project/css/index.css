@@ -1,0 +1,25 @@
+.ad-text {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: color-change 2s infinite;
+    font-size: 20px;
+  }
+  
+  @keyframes color-change {
+    0% { color: red; }
+    50% { color: green; }
+    100% { color: red; }
+  }
+  .custom-link {
+    color: #1E90FF; /* Màu cho các liên kết chưa truy cập */
+    text-decoration: none; /* Không gạch chân */
+  }
+
+  .custom-link:visited {
+    color: #1E90FF; /* Màu cho các liên kết đã truy cập */
+  }
+
+  .custom-link:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+  }

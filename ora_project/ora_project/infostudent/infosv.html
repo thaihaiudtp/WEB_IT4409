@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open1()"><i class="fa fa-bars"></i></a>
+    <a href="/ora_project/page.html" class="w3-bar-item w3-button w3-hover-white"><i class="fa-solid fa-computer"></i></a>
+    <a href="/ora_project/css/index.css" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+    <a href="/ora_project/webtech/web.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ web</a>
+    <a href=" " class="w3-bar-item w3-button w3-hide-small w3-theme-l1 ">Thông tin sinh viên</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar1">
+  <a href="javascript:void(0)" onclick="w3_close1()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#thongtinsinhvien">Thông tin sinh viên</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close1()" style="cursor:pointer" title="close side menu" id="myOverlay1"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:230px; margin-top: 30px;">
+
+    <div class="w3-row w3-padding-70" id="thongtinsinhvien">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">THÔNG TIN SINH VIÊN</h1>
+          <div class="w3-row-padding">
+            <div class="w3-half">
+              <img src="../img/info.png" alt="Sinh viên" style="width:100%">
+              <p class="w3-center">MSSV: 202225621</p>
+            </div>
+            <div class="w3-half">
+              <h3>Nguyễn Mạnh Thái Hà</h3>
+              <p><b>Năm vào trường:</b> 2022</p>
+              <p><b>Bậc đào tạo:</b> KSCLC-TN-TT-VNVP-ICT</p>
+              <p><b>Chương trình:</b> Công nghệ thông tin Việt-Nhật 2022</p>
+              <p><b>Khoa/Viện quản lý:</b> Trường Công nghệ thông tin và Truyền thông</p>
+              <p><b>Tình trạng học tập:</b> Học</p>
+              <p><b>Giới tính:</b> Nam</p>
+              <p><b>Lớp:</b> Việt Nhật 05-K67</p>
+              <p><b>Khóa học:</b> 67</p>
+              <p><b>Email:</b> ha.nmt225621@sis.hust.edu.vn</p>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+      
+      
+      
+      <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+          <h4>About Us</h4>
+          <p>We are dedicated to providing top-notch educational content and web development resources. Our goal is to help students and professionals excel in the field of web technologies.</p>
+        </div>
+      
+        <div class="w3-container w3-theme-l1 w3-padding-16">
+          <div class="w3-row-padding">
+            <!-- Contact Information -->
+            <div class="w3-third">
+              <h5>Contact Us</h5>
+              <p><i class="fa fa-map-marker"></i> Address: 123 Main St, Hanoi, Vietnam</p>
+              <p><i class="fa fa-phone"></i> Phone: +84 123 456 789</p>
+              <p><i class="fa fa-envelope"></i> Email: contact@example.com</p>
+            </div>
+      
+            <!-- Useful Links -->
+            <div class="w3-third">
+              <h5>Useful Links</h5>
+              <ul class="w3-ul">
+                <li><a href="/ora_project/page.html" class="w3-hover-opacity">Home</a></li>
+                <li><a href="/ora_project/infrocourse/info.html" class="w3-hover-opacity">Thông tin môn học</a></li>
+                <li><a href="/ora_project/webtech/web.html" class="w3-hover-opacity">Các công nghệ web</a></li>
+                <li><a href=" " class="w3-hover-opacity">Thông tin sinh viên</a></li>
+                
+              </ul>
+            </div>
+      
+            <!-- Social Media -->
+            <div class="w3-third">
+              <h5>Follow Us</h5>
+              <a href="#" class="w3-button w3-large w3-theme-d1 w3-hover-opacity"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="w3-button w3-large w3-theme-d1 w3-hover-opacity"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="w3-button w3-large w3-theme-d1 w3-hover-opacity"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="w3-button w3-large w3-theme-d1 w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="w3-container w3-theme-l1 w3-center w3-padding-16">
+          <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+      </footer>
+</div>
+
+
+
+
+
+<!-- END MAIN -->
+
+
+<script src="/ora_project/infosv.js">
+
+</script>
+<script src="https://kit.fontawesome.com/b251fda1bb.js" crossorigin="anonymous"></script>
+</body>
+</html>
